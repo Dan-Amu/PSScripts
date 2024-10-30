@@ -1,3 +1,11 @@
+#
+#This script assumes a file called "ReadTestFile.txt" already is created in all folders. 
+#Here is a powershell command to do so:
+#
+#foreach($folder in (Get-ChildItem -Directory .)) { New-Item -ItemType File -path "$folder\ReadTestFile.txt"}
+#
+
+
 Write-Host "Username is: $env:username"
 
 $childdirs = Get-ChildItem -Directory -Path "." 
